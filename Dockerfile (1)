@@ -1,0 +1,10 @@
+FROM nvcr.io/nvidia/merlin/merlin-pytorch-training:21.12
+RUN apt-get update 
+RUN apt-get install -y git
+RUN apt-get install -y python3-pip
+RUN pip install --upgrade pip
+RUN pip install ipykernel && \
+    python -m ipykernel install --sys-prefix && \
+    pip install --quiet --no-cache-dir \
+    'boto3>1.0<2.0' \
+    'sagemaker>2.0<3.0'

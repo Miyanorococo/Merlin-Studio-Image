@@ -1,0 +1,15 @@
+{
+  "DefaultUserSettings": {
+    "KernelGatewayAppSettings": {
+      "CustomImages": [
+          {
+                   "ImageName": "merlintorch",
+                   "AppImageConfigName": "custom-merlin"
+                }
+       ],
+      "DefaultResourceSpec": { 
+            "InstanceType": "ml.g4dn.2xlarge"
+       }
+    }
+  }
+}
